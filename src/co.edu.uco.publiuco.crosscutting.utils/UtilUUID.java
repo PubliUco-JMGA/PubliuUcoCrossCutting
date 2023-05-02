@@ -4,12 +4,16 @@ import java.util.UUID;
 
 public final class UtilUUID {
 
-    public static final String DEFAULT_UUID_AS_STRING = "00000000-0000-0000-0000-000000000000";
-    public static final UUID DEFAULT_UUID = generateUUIDFromString(DEFAULT_UUID_AS_STRING);
+    private static final String DEFAULT_UUID_AS_STRING = "00000000-0000-0000-0000-000000000000";
+    private static final UUID DEFAULT_UUID = generateUUIDFromString(DEFAULT_UUID_AS_STRING);
     private static final String UUID_RE = "[a-f0-9]{8}([-][a-f0-9]{4}){3}[-][a-f0-9]{12}";
 
     private UtilUUID() {
         super();
+    }
+
+    public static final UUID getDefaultValue() {
+        return DEFAULT_UUID;
     }
 
     public static final UUID getDefault(final UUID uuidValue) {
@@ -27,5 +31,6 @@ public final class UtilUUID {
     public static final UUID generateUUIDFromString(final String uuidValue) {
         return (uuidStringIsValid(uuidValue)) ? UUID.fromString(uuidValue) : DEFAULT_UUID;
     }
+
 
 }
