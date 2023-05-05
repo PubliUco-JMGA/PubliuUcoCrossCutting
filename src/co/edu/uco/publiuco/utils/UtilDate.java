@@ -38,8 +38,4 @@ public final class UtilDate {
         return generate(dateTime);
     }
 
-    public static void main(String[] args) {
-        //System.out.println(getDefault());
-        System.out.println(generate("2018-12-17 23:26:30"));
-    }
 }

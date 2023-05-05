@@ -32,8 +32,4 @@ public final class UtilUUID {
 		return (uuidStringIsValid(uuidValue)) ? UUID.fromString(uuidValue) : DEFAULT_UUID;
 	}
 
-	public static void main(String[] args) {
-		System.out.println(generateUUIDFromString("000g0000-0000-0000-0000-000000000000"));
-	}
-
 }
