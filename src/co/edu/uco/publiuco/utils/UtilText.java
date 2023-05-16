@@ -71,8 +71,11 @@ public final class UtilText {
 		return isNull(emailAdress) ? false : getUtilText().matchPattern(emailAdress, EMAIL_RE);
 	}
 
-	public boolean StringHasOnlyLetters(String string) {
+	public boolean textHasOnlyLetters(String string) {
 		return isNull(string) ? false : getUtilText().matchPattern(string, LETTER_RE);
+	}
+	public boolean textHasLenghtAllowed(String string, int minimumLenght, int maximunLenght) {
+		return isNull(string) ? false : string.length() >= minimumLenght && string.length() <= maximunLenght;
 	}
 
 
