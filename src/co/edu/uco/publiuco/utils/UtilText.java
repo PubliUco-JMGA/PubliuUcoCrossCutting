@@ -3,6 +3,7 @@ package co.edu.uco.publiuco.utils;
 public final class UtilText {
 
 	private static final String EMAIL_RE = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+	private static final String LETTER_RE = "[a-zA-Z\\\\s]+";
 	private static final String DEFAULT_EMAIL = "uconnectrugrats@gmail.com";
 	private static final String NUMERIC_RE = "[0-9]+";
 	private static final String DEFAULT_NUMERIC = "0";
@@ -62,12 +63,17 @@ public final class UtilText {
 		return getDefault(text).matches(getDefault(pattern));
 	}
 
-	public static boolean numericIsValid(final String numericString){
+	public boolean numericIsValid(final String numericString){
 		return isNull(numericString) ? false : getUtilText().matchPattern(numericString, NUMERIC_RE);
 	}
 
-	public static boolean emailIsvalid(final String emailAdress){
+	public boolean emailIsvalid(final String emailAdress){
 		return isNull(emailAdress) ? false : getUtilText().matchPattern(emailAdress, EMAIL_RE);
 	}
+
+	public boolean StringHasOnlyLetters(String string) {
+		return isNull(string) ? false : getUtilText().matchPattern(string, LETTER_RE);
+	}
+
 
 }
