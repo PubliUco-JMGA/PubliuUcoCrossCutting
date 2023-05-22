@@ -289,6 +289,17 @@ public class Messages {
 		public static final String USER_MESSAGE_DROP = "Se ha presentado un problema tratando de eliminar la Respuesta. Por favor intente de nuevo y si el problema persiste contacte al administrador respectivo";
 		public static final String TECHNICAL_MESSAGE_DROP = "Se ha presentado una excepcion no conocida al momento de eliminar la Respuesta, por favor valide la traza completa de la excepcion presentada";
 	}
+	public static final class RespuestaReporteFacadeImplMessages{
+		private RespuestaReporteFacadeImplMessages(){}
+		public static final String USER_MESSAGE_REGISTER = "Se ha presentado un problema tratando de registrar la Respuesta del Reporte. Por favor intente de nuevo y si el problema persiste contacte al administrador respectivo";
+		public static final String TECHNICAL_MESSAGE_REGISTER = "Se ha presentado una excepcion no conocida al momento de registrar la nueva Respuesta Reporte, por favor valide la traza completa de la excepcion presentada";
+		public static final String USER_MESSAGE_MODIFY = "Se ha presentado un problema tratando de modificar la Respuesta del Reporte. Por favor intente de nuevo y si el problema persiste contacte al administrador respectivo";
+		public static final String TECHNICAL_MESSAGE_MODIFY = "Se ha presentado una excepcion no conocida al momento de modificar la Respuesta Reporte, por favor valide la traza completa de la excepcion presentada";
+		public static final String USER_MESSAGE_LIST = "Se ha presentado un problema tratando de listar la Respuesta del Reporte. Por favor intente de nuevo y si el problema persiste contacte al administrador respectivo";
+		public static final String TECHNICAL_MESSAGE_LIST = "Se ha presentado una excepcion no conocida al momento de listar la Respuesta Reporte, por favor valide la traza completa de la excepcion presentada";
+		public static final String USER_MESSAGE_DROP = "Se ha presentado un problema tratando de eliminar la Respuesta del Reporte. Por favor intente de nuevo y si el problema persiste contacte al administrador respectivo";
+		public static final String TECHNICAL_MESSAGE_DROP = "Se ha presentado una excepcion no conocida al momento de eliminar la Respuesta Reporte, por favor valide la traza completa de la excepcion presentada";
+	}
 	public static final class RevisionFacadeImplMessages{
 		private RevisionFacadeImplMessages(){}
 		public static final String USER_MESSAGE_REGISTER = "Se ha presentado un problema tratando de registrar la Revision. Por favor intente de nuevo y si el problema persiste contacte al administrador respectivo";

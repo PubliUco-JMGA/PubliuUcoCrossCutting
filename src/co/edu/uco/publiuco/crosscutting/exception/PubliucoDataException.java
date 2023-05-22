@@ -6,7 +6,6 @@ public class PubliucoDataException extends PubliucoException{
 
 	protected PubliucoDataException(String technicalMessage, String userMessage, Throwable rootCause) {
 		super(technicalMessage, userMessage, rootCause, ExceptionType.DATA);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public static PubliucoDataException create(final String technicalMessage, final String userMessage, final Throwable rootCause) {
